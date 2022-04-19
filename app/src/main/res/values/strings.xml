@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Entrega</string>
+
+    <string-array name="descripcion">
+        <item> Pesca Deportiva </item>
+        <item> Pesca Embarcada </item>
+        <item> Pesca De Mar </item>
+        <item> Pesca De Rio </item>
+
+    </string-array>
+</resources>
