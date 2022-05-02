@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/segundaFragment">
+
+    <fragment
+        android:id="@+id/primeraFragment"
+        android:name="com.example.entrega.pantallas.PrimeraFragment"
+        android:label="fragment_primera"
+        tools:layout="@layout/fragment_primera" >
+        <action
+            android:id="@+id/action_primeraFragment_to_resultadosFragment"
+            app:destination="@id/resultadosFragment" />
+        <action
+            android:id="@+id/action_primeraFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundaFragment"
+        android:name="com.example.entrega.pantallas.SegundaFragment"
+        android:label="fragment_segunda"
+        tools:layout="@layout/fragment_segunda" >
+        <action
+            android:id="@+id/action_segundaFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultadosFragment"
+        android:name="com.example.entrega.pantallas.ResultadosFragment"
+        android:label="fragment_resultados"
+        tools:layout="@layout/fragment_resultados" >
+        <action
+            android:id="@+id/action_resultadosFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_resultadosFragment_to_primeraFragment"
+            app:destination="@id/primeraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.entrega.pantallas.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_segundaFragment"
+            app:destination="@id/segundaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_primeraFragment"
+            app:destination="@id/primeraFragment" />
+    </fragment>
+</navigation>

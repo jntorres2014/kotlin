@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
         Thread.sleep(2000)
         setTheme(R.style.Theme_Entrega)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.fragment_resultados)
     }
-
+/*
     fun sendMessage(view: View) {
         val titulo = findViewById<EditText>(R.id.id_titulo)
         val descripcion = findViewById<EditText>(R.id.id_descripcion)
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             putExtra("descripcion", descripcion.text.toString());
             putExtra("fecha", fecha.text.toString());
         }
-        startActivity(intent)
+        startActivity(intent)*/
 /*
 
         override fun onSaveInstanceState(outState: Bundle) {
@@ -33,6 +33,6 @@ class MainActivity : AppCompatActivity() {
             outState.putString("titulo", titulo.text.toString())
             outState.putString("descripcion", descripcion.text.toString())
             outState.putString("fecha", fecha.text.toString())
-        }*/
-    }
+        }
+    }*/
 }
